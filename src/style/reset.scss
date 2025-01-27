@@ -1,0 +1,293 @@
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Pretendard Black"), local("Pretendard-Black"), url(/assets/fonts/Pretendard-Black.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Pretendard ExtraBold"), local("Pretendard-ExtraBold"), url(/assets/fonts/Pretendard-ExtraBold.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Pretendard Bold"), local("Pretendard-Bold"), url(/assets/fonts/Pretendard-Bold.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Pretendard SemiBold"), local("Pretendard-SemiBold"), url(/assets/fonts/Pretendard-SemiBold.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Pretendard Medium"), local("Pretendard-Medium"), url(/assets/fonts/Pretendard-Medium.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Pretendard Regular"), local("Pretendard-Regular"), url(/assets/fonts/Pretendard-Regular.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Pretendard Light"), local("Pretendard-Light"), url(/assets/fonts/Pretendard-Light.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Pretendard ExtraLight"), local("Pretendard-ExtraLight"), url(/assets/fonts/Pretendard-ExtraLight.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 100;
+    src: local("Pretendard Thin"), local("Pretendard-Thin"), url(/assets/fonts/Pretendard-Thin.ttf) format("ttf");
+}
+
+// @font-face {
+//     font-family: "RacingSansOne";
+//     src:  local("Pretendard Thin"), local("Pretendard-Thin"), url(/assets/fonts/Pretendard-Thin.ttf) format("ttf");
+// }
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    // font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+h1,
+p {
+    // color:
+}
+
+:root {
+    --main-col: #0235FF;
+    --main-yellow: #F7FF61;
+}
+
+$colors: (
+    "main-col" : var(--main-col),
+    "main-yellow": var(--main-yellow),
+);
+
+@each $semantic, $color in $colors {
+    .bgc-#{$semantic} {
+        background-color: $color !important;
+    }
+
+    .txt-#{$semantic} {
+        color: $color !important;
+    }
+}
+
+// font-weight
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+.fw-800 {
+    font-weight: 800 !important;
+}
+
+$sizes: (
+    "size8": 8px,
+    "size10": 10px,
+    "size11": 11px,
+    "size12": 12px,
+    "size13": 13px,
+    "size14": 14px,
+    "size15": 15px,
+    "size16": 16px,
+    "size18": 18px,
+    "size20": 20px,
+    "size22": 22px,
+    "size24": 24px,
+);
+
+@each $semantic, $size in $sizes {
+    .#{$semantic} {
+        font-size: $size !important;
+    }
+}
+
+@for $i from 1 through 300 {
+    .w#{$i} {
+        width: #{$i}px !important;
+    }
+
+    .minw#{$i} {
+        min-width: #{$i}px !important;
+    }
+
+    .h#{$i} {
+        height: #{$i}px !important;
+    }
+
+    .minh#{$i} {
+        min-height: #{$i}px !important;
+    }
+
+    .p#{$i} {
+        padding: #{$i}px !important;
+    }
+
+    .pl#{$i} {
+        padding-left: #{$i}px !important;
+    }
+
+    .pr#{$i} {
+        padding-right: #{$i}px !important;
+    }
+
+    .pt#{$i} {
+        padding-top: #{$i}px !important;
+    }
+
+    .pb#{$i} {
+        padding-bottom: #{$i}px !important;
+    }
+
+    .px#{$i} {
+        padding-left: #{$i}px !important;
+        padding-right: #{$i}px !important;
+    }
+
+    .py#{$i} {
+        padding-top: #{$i}px !important;
+        padding-bottom: #{$i}px !important;
+    }
+
+    .m#{$i} {
+        margin: #{$i}px !important;
+    }
+
+    .ml#{$i} {
+        margin-left: #{$i}px !important;
+    }
+
+    .mr#{$i} {
+        margin-right: #{$i}px !important;
+    }
+
+    .mt#{$i} {
+        margin-top: #{$i}px !important;
+    }
+
+    .mb#{$i} {
+        margin-bottom: #{$i}px !important;
+    }
+
+    .mx#{$i} {
+        margin-left: #{$i}px !important;
+        margin-right: #{$i}px !important;
+    }
+
+    .my#{$i} {
+        margin-top: #{$i}px !important;
+        margin-bottom: #{$i}px !important;
+    }
+}
+
+@for $i from 1 to 50 {
+    .gap#{$i} {
+        gap: #{$i}px !important;
+    }
+}
