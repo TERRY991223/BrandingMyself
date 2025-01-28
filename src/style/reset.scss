@@ -288,7 +288,7 @@ $sizes: (
     }
 }
 
-@for $i from 1 to 50 {
+@for $i from 1 to 200 {
     .gap#{$i} {
         gap: #{$i}px !important;
     }

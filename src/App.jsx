@@ -44,6 +44,37 @@ function App() {
           </div>
         </div>
         <div className="main-about">
+          <div className="about-txt">
+          <p>ABOUT ME</p>
+          </div>
+          <div className="flex mx50 mt100 alignCenter justifyCenter gap180">
+            <div className="about-img">
+              <image>
+
+              </image>
+            </div>
+            <div className="about-info1">
+              <div className="about-info-txt">
+                <p>NAME</p>
+                <p>신혜수</p>
+              </div>
+              <div className="about-info-txt">
+                <p>BIRTH</p>
+                <p>1999.12.23</p>
+              </div>
+              <div className="about-info-txt">
+                <p>PHONE</p>
+                <p>010.9941.0082</p>
+              </div>
+              <div className="about-info-txt">
+                <p>EMAIL</p>
+                <p>chfhrl@naver.com</p>
+              </div>
+            </div>
+          </div>
+          <div>
+
+          </div>
         </div>
         <div className="main-skill">
           <div className="skill-txt">
