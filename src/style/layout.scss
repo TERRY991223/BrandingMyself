@@ -45,7 +45,16 @@
             &:nth-child(4) {
                 padding-left: 650px;
             }
+        }
 
+        h1:hover {
+            color: var(--main-yellow);
+            transition: all 0.3s;
+        }
+
+        h2:hover {
+            color: var(--main-green);
+            transition: all 0.3s;
         }
     }
 
@@ -70,6 +79,7 @@
 
     .skill-grid {
         height: 550px;
+        min-width: 965px;
         margin-top: 30px;
         border: 1px solid var(--main-col);
         border-radius: 50px;

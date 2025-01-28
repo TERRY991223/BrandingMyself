@@ -149,11 +149,13 @@ p {
 :root {
     --main-col: #0235FF;
     --main-yellow: #F7FF61;
+    --main-green: #ACFFB3;
 }
 
 $colors: (
     "main-col" : var(--main-col),
     "main-yellow": var(--main-yellow),
+    "main-green": var(--main-green),
 );
 
 @each $semantic, $color in $colors {
