@@ -1,13 +1,13 @@
 import './style/default.scss';
 import 'animate.css'
-import { useState, useEffect } from 'react';
-import { cursor } from './scripts/cursor';
+import { useState } from 'react';
+import Header from './component/Header';
 
 function App() {
 
-  useEffect(() => {
-    cursor();
-  }, []);
+  // useEffect(() => {
+  //   cursor();
+  // }, []);
 
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
@@ -18,23 +18,7 @@ function App() {
 
   return (
     <>
-      <header>
-        <div className="cursor"></div>
-        <div className="header-wrap flex px16" style={{ position: "fixed", top: 0 }}>
-          <div className="flex alignCenter justifyBetween" style={{ width: "100%" }}>
-            <img className="w80" src="/public/images/header-logo.svg" alt="html"></img>
-            <div className="flex alignCenter justifyCenter w45 h45 bgc-main-col" style={{ borderRadius: "100px" }}>
-              <ul className="flexColumn gap5">
-                <li className="flex w25 h5 bgc-main-yellow" style={{ borderRadius: "10px" }}></li>
-                <li className="flex w25 h5 bgc-main-yellow" style={{ borderRadius: "10px" }}></li>
-                <li className="flex w25 h5 bgc-main-yellow" style={{ borderRadius: "10px" }}></li>
-              </ul>
-            </div>
-          </div>
-        </div >
-      </header>
-
-
+      <Header />
       <div className="main-wrap">
         <div className="main-main">
           <div className="main-txt">
