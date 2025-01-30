@@ -1,7 +1,7 @@
 import './style/default.scss';
 import 'animate.css'
 import { useState } from 'react';
-import Header from './component/Header';
+// import { cursor } from './scripts/cursor';
 
 function App() {
 
@@ -18,7 +18,6 @@ function App() {
 
   return (
     <>
-      <Header />
       <div className="main-wrap">
         <div className="main-main">
           <div className="main-txt">
@@ -45,7 +44,7 @@ function App() {
         </div>
         <div className="main-about">
           <div className="about-txt">
-          <p>ABOUT ME</p>
+            <p>ABOUT ME</p>
           </div>
           <div className="flex mx50 mt100 alignCenter justifyCenter gap180">
             <div className="about-img">
