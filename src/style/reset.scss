@@ -60,11 +60,22 @@
     font-weight: 100;
     src: local("Pretendard Thin"), local("Pretendard-Thin"), url(/assets/fonts/Pretendard-Thin.ttf) format("ttf");
 }
+@font-face {
+    font-family: "Baskervville";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Baskervville"),
+         url("/assets/fonts/Baskervville-Regular.ttf") format("truetype");
+}
 
-// @font-face {
-//     font-family: "RacingSansOne";
-//     src:  local("Pretendard Thin"), local("Pretendard-Thin"), url(/assets/fonts/Pretendard-Thin.ttf) format("ttf");
-// }
+@font-face {
+    font-family: "Baskervville";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Baskervville Italic"),
+         url("/assets/fonts/Baskervville-Italic.ttf") format("truetype");
+}
+
 
 *,
 *:before,
@@ -141,6 +152,10 @@ ul {
     list-style: none;
 }
 
+li a{
+    color: black !important;
+}
+
 h1,
 p {
     // color:
@@ -150,6 +165,7 @@ p {
     --main-col: #0235FF;
     --main-yellow: #F7FF61;
     --main-green: #ACFFB3;
+    --bgc-yellow: #FFFAF0;
 }
 
 $colors: (
