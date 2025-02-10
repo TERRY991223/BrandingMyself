@@ -162,16 +162,48 @@ p {
 }
 
 :root {
-    --main-col: #0235FF;
-    --main-yellow: #F7FF61;
-    --main-green: #ACFFB3;
+    --black: #222222;
+    --white : #ffffff;
     --bgc-yellow: #FFFAF0;
+
+    --labelbg-html: #FFF0F0;
+    --labeltxt-html: #FC2727;
+    --labelbg-css: #DAFFFE;
+    --labeltxt-css: #1297EA;
+    --labelbg-react: #faedd3;
+    --labeltxt-react: #FC8527;
+    --labelbg-scss: #FFEAF9;
+    --labeltxt-scss: #FC2799;
+    --labelbg-figma: #EAFFEF;
+    --labeltxt-figma: #21B200;
+    --labelbg-type: #DAE7FF;
+    --labeltxt-type: #0074BD;
+    --labelbg-java: #FAFFC9;
+    --labeltxt-java: #8E8305;
+    --font-br: #826B6B;
+    --font-gr: #A9A9A9;
 }
 
 $colors: (
-    "main-col" : var(--main-col),
-    "main-yellow": var(--main-yellow),
-    "main-green": var(--main-green),
+    "bgc-yellow" : var(--bgc-yellow),
+    "labelbg-yellow": var(--labelbg-yellow),
+    "labeltxt-yellow": var(--labeltxt-yellow),
+    "font-br": var(--font-br),
+    "font-gr": var(--font-gr),
+    "labelbg-html": var(--labelbg-html),
+    "labelbg-css": var(--labelbg-css),
+    "labelbg-scss": var(--labelbg-scss),
+    "labelbg-react": var(--labelbg-react),
+    "labelbg-figma": var(--labelbg-figma),
+    "labelbg-type": var(--labelbg-type),
+    "labelbg-java": var(--labelbg-java),
+    "labeltxt-html": var(--labeltxt-html),
+    "labeltxt-css": var(--labeltxt-css),
+    "labeltxt-scss": var(--labeltxt-scss),
+    "labeltxt-react": var(--labeltxt-react),
+    "labeltxt-figma": var(--labeltxt-figma),
+    "labeltxt-type": var(--labeltxt-type),
+    "labeltxt-java": var(--labelbg-java),
 );
 
 @each $semantic, $color in $colors {
