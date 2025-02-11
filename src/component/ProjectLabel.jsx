@@ -9,7 +9,7 @@ const ProjectLabel = ({ type }) => {
         FIGMA: { bgClass: 'bgc-labelbg-figma', textClass: 'txt-labeltxt-figma' },
         SCSS: { bgClass: 'bgc-labelbg-scss', textClass: 'txt-labeltxt-scss' },
         TYPESCRIPT: { bgClass: 'bgc-labelbg-type', textClass: 'txt-labeltxt-type' },
-        JAVASCRIPT: { bgClass: 'bgc-labelbg-java', textClass: 'txt-labeltxt-jsva' },
+        JAVASCRIPT: { bgClass: 'bgc-labelbg-java', textClass: 'txt-labeltxt-java' },
     };
 
     // 매칭되는 스타일 가져오기 (없으면 기본값 '')

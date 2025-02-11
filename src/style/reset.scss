@@ -203,7 +203,7 @@ $colors: (
     "labeltxt-react": var(--labeltxt-react),
     "labeltxt-figma": var(--labeltxt-figma),
     "labeltxt-type": var(--labeltxt-type),
-    "labeltxt-java": var(--labelbg-java),
+    "labeltxt-java": var(--labeltxt-java),
 );
 
 @each $semantic, $color in $colors {

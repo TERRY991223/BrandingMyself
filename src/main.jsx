@@ -1,11 +1,13 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import Header from './component/Header.jsx'
+import Footer from './component/Footer.jsx'
+import Home from './pages/Home.jsx';
 
 createRoot(document.getElementById('root')).render(
   <>
-    <Header />
-    <App />
+    <Header/> 
+    <Home/>
+    <Footer/>
   </>
 )
