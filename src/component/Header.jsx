@@ -1,5 +1,4 @@
-// src/components/Header.jsx
-import { BrowserRouter as Link } from 'react-router-dom'; // Router와 Link 임포트
+import {NavLink} from 'react-router-dom';
 import "../style/default.scss";
 
 const Header = () => {
@@ -13,16 +12,16 @@ const Header = () => {
             <nav>
               <ul className="nav-list">
                 <li>
-                  <Link to="/home">Home</Link>
+                  <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <NavLink to="/pages/about">About</NavLink>
                 </li>
                 <li>
-                  <Link to="/project">Project</Link>
+                  <NavLink to="/pages/project">Project</NavLink>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <NavLink to="/pages/contact">Contact</NavLink>
                 </li>
               </ul>
             </nav>

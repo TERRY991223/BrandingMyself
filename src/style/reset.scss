@@ -83,6 +83,15 @@
     box-sizing: border-box;
 }
 
+* {
+    cursor: url('/images/cursor.png') 24 24, auto !important;
+}
+ 
+
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body,
 div,
@@ -161,6 +170,8 @@ p {
     // color:
 }
 
+
+
 :root {
     --black: #222222;
     --white : #ffffff;
@@ -180,6 +191,9 @@ p {
     --labeltxt-type: #0074BD;
     --labelbg-java: #FAFFC9;
     --labeltxt-java: #8E8305;
+
+    --chip-red : #FF9C9C;
+
     --font-br: #826B6B;
     --font-gr: #A9A9A9;
 }
@@ -204,6 +218,8 @@ $colors: (
     "labeltxt-figma": var(--labeltxt-figma),
     "labeltxt-type": var(--labeltxt-type),
     "labeltxt-java": var(--labeltxt-java),
+    "chip-red": var(--chip-red),
+
 );
 
 @each $semantic, $color in $colors {
